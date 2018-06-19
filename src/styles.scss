@@ -1,5 +1,9 @@
 /* Application-wide Styles */
 
+@import '~src/scss/variables';
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything(true, true);
+
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;

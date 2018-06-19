@@ -1,3 +1,24 @@
-<h1>{{title}}</h1>
-<app-heroes></app-heroes>
-<app-messages></app-messages>
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-8">
+      <h1>{{title}}</h1>
+      <nav class="grid-container">
+        <div class="grid-x">
+          <ul class="breadcrumbs">
+            <li routerLink="/dashboard"><a>Dashboard</a></li>
+            <li routerLink="/heroes"><a>Heroes</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="cell small-4">
+       <app-messages></app-messages>
+    </div>
+    <div class="cell small-8">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="cell small-4">
+      <app-hero-detail></app-hero-detail>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="grid-container">
+  <div class="grid-x grid-margin-x margin-top-2">
+    <div class="cell small-12">
+      <h3>Top Heroes</h3>
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x">
+    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}" class="cell small-3">
+      <h5>{{hero.name}}</h5>
+    </a>
+  </div>
+</div>
